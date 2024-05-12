@@ -1,0 +1,52 @@
+manifestVersion: 1
+id: open-webui
+category: Utilities
+name: Open WebUI
+version: "0.1.124"
+tagline: Extensible, feature-rich, and user-friendly self-hosted WebUI for LLMs
+description: >-
+  Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs.
+
+  Features include:
+  
+  - Intuitive chat interface inspired by ChatGPT
+  - Responsive design for desktop and mobile 
+  - Fast and responsive performance
+  - Easy setup with Docker
+  - Theme customization
+  - Code syntax highlighting
+  - Full Markdown and LaTeX support
+  - Local RAG integration with document library
+  - Web browsing capability 
+  - Prompt presets
+  - RLHF annotation
+  - Conversation tagging
+  - Model management
+  - Multi-modal support
+  - Collaborative chat
+  - Chat history with export/import
+  - Voice input 
+  - Image generation integration
+  - OpenAI API integration  
+  - Multi-user management
+  - Role-based access control
+  - Multilingual support
+  - And more!
+
+releaseNotes: >-
+  - Initial release of Open WebUI app for Umbrel
+developer: Open WebUI
+website: https://openwebui.com
+dependencies: []
+repo: https://github.com/open-webui/open-webui
+support: https://discord.gg/5rJgQTnV4s
+port: 3000
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Topiga
+submission: https://github.com/getumbrel/umbrel-apps/pull/XXX
