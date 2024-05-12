@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: open-webui_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: ghcr.io/open-webui/open-webui:ollama
+    restart: on-failure
+    stop_grace_period: 1m
+    ports:
+      - 3000:8080
+    volumes:
+      - ${APP_DATA_DIR}/ollama:/root/.ollama
+      - ${APP_DATA_DIR}/open-webui:/app/backend/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
